@@ -37,6 +37,7 @@ namespace Exemplo_com_Splitter
 
         private void RemoverProdutoClick(object sender, RoutedEventArgs e)
         {
+            // Comentario inutil
             RemoverProdutoControl controle = new RemoverProdutoControl();
             PainelDireito.Children.Add(controle);
         }
