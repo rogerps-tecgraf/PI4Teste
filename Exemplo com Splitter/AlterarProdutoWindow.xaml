@@ -1,0 +1,48 @@
+﻿<Window x:Class="Exemplo_com_Splitter.AlterarProdutoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exemplo_com_Splitter"
+        mc:Ignorable="d"
+        Title="AlterarProdutoWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Nome:" FontSize="25"
+               VerticalContentAlignment="Center" Margin="10"/>
+
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="10" FontSize="25"
+                 VerticalAlignment="Center"/>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Sexo:" FontSize="25"
+               VerticalContentAlignment="Center" Margin="10"/>
+
+        <ComboBox Grid.Row="1" Grid.Column="1" FontSize="25" Margin="10" VerticalAlignment="Center">
+            <ComboBoxItem Content="Feminino"/>
+            <ComboBoxItem Content="Masculino"/>
+        </ComboBox>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Data de Nascimento:" FontSize="25"
+               VerticalContentAlignment="Center" Margin="10"/>
+
+        <DatePicker Grid.Row="2" Grid.Column="1" Margin="10" 
+                    FontSize="25" VerticalContentAlignment="Center" VerticalAlignment="Center"/>
+
+        <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Ok" FontSize="25" Margin="10" Width="120"/>
+            <Button Content="Cancelar" FontSize="25" Margin="10" Width="120"/>
+        </StackPanel>
+    </Grid>
+</Window>
